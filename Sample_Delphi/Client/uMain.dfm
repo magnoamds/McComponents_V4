@@ -199,20 +199,75 @@ object F_Main: TF_Main
         DataType = ftInteger
       end
       item
+        Name = 'CODIGO_BARRAS'
+        DataType = ftString
+        Size = 14
+      end
+      item
         Name = 'DESCRICAO'
         Attributes = [faRequired]
         DataType = ftString
-        Size = 50
+        Size = 100
       end
       item
-        Name = 'ID_UF'
+        Name = 'ID_UND'
         Attributes = [faRequired]
         DataType = ftInteger
       end
       item
-        Name = 'DDD'
-        DataType = ftString
+        Name = 'ID_GRUPO'
+        Attributes = [faRequired]
+        DataType = ftInteger
+      end
+      item
+        Name = 'QTD_MINIMA'
+        DataType = ftFMTBcd
+        Precision = 18
+        Size = 3
+      end
+      item
+        Name = 'QTD_MAXIMA'
+        DataType = ftFMTBcd
+        Precision = 18
+        Size = 3
+      end
+      item
+        Name = 'QTD_ESTOQUE'
+        DataType = ftFMTBcd
+        Precision = 18
+        Size = 3
+      end
+      item
+        Name = 'VALOR_CUSTO'
+        DataType = ftFMTBcd
+        Precision = 18
         Size = 2
+      end
+      item
+        Name = 'VALOR_VENDA'
+        DataType = ftFMTBcd
+        Precision = 18
+        Size = 2
+      end
+      item
+        Name = 'OBS'
+        DataType = ftMemo
+      end
+      item
+        Name = 'PHOTO'
+        DataType = ftBlob
+      end
+      item
+        Name = 'ATIVO'
+        DataType = ftSmallint
+      end
+      item
+        Name = 'CREATED_AT'
+        DataType = ftTimeStamp
+      end
+      item
+        Name = 'UPDATED_AT'
+        DataType = ftTimeStamp
       end>
     IndexDefs = <>
     FetchOptions.AssignedValues = [evMode]

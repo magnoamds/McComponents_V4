@@ -81,6 +81,8 @@ var
   lInicio, lFim: Cardinal;
   lTempo: Extended;
 begin
+  DBImage.DataField := '';
+
   McMemTable.Cache.Active := cbx_McCached.Checked;
   lInicio := GetTickCount;
   try
@@ -90,6 +92,9 @@ begin
     lTempo := ((lFim - lInicio) / 1000);
     lbl_Tempo.Caption := Format('Tempo: %g ms', [lTempo]);
   end;
+
+  if (DataSource.DataSet.FindField('photo') <> nil) then
+    DBImage.DataField := 'photo';
 end;
 
 procedure TF_Main.McConnectionBeforeConnect(Sender: TObject);
