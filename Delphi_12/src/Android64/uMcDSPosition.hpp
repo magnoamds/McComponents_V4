@@ -35,10 +35,10 @@ class PASCALIMPLEMENTATION TMcDSPosition : public System::TObject
 private:
 	System::UnicodeString FKeyFieldNames;
 	System::Variant FKeyValues;
-	bool __fastcall CanSaveKeyValues(Data::Db::TDataSet* DataSet, const System::DynamicArray<System::UnicodeString> FieldList);
+	bool __fastcall CanSaveKeyValues(Data::Db::TDataSet* ADataSet, const System::DynamicArray<System::UnicodeString> AFieldList);
 	
 public:
-	void __fastcall SavePosition(Data::Db::TDataSet* DataSet, const System::UnicodeString KeyFields);
+	void __fastcall SavePosition(Data::Db::TDataSet* ADataSet, const System::UnicodeString AKeyFields);
 	void __fastcall RestorePosition(Data::Db::TDataSet* DataSet);
 public:
 	/* TObject.Create */ inline __fastcall TMcDSPosition() : System::TObject() { }

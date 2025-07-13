@@ -28,9 +28,21 @@ begin
 
   THorse.Post('/resource',
     procedure(AReq: THorseRequest; ARes: THorseResponse)
+    var
+      lStream: TStream;
     begin
       try
-        ARes.SendFile(DM.McServer.Resource(AReq.ContentFields.Field('mcdata').AsStream));
+        if AReq.ContentType.ToLower.Contains('application/json') then
+          ARes.Send(DM.McServer.Resource(AReq.Body()))
+        else
+        begin
+          lStream := DM.McServer.Resource(AReq.ContentFields.Field('mcdata').AsStream);
+          try
+            ARes.SendFile(lStream);
+          finally
+            FreeAndNil(lStream);
+          end;
+        end;
       except
         on E: exception do
           ARes.Send(E.Message);
