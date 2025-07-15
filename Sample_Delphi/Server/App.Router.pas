@@ -33,12 +33,13 @@ begin
     begin
       try
         if AReq.ContentType.ToLower.Contains('application/json') then
-          ARes.Send(DM.McServer.Resource(AReq.Body()))
+          ARes.ContentType('application/json')
+              .Send(DM.McServer.Resource(AReq.Body()))
         else
         begin
           lStream := DM.McServer.Resource(AReq.ContentFields.Field('mcdata').AsStream);
           try
-            ARes.SendFile(lStream);
+            ARes.SendFile(lStream, 'application/octet-stream');
           finally
             FreeAndNil(lStream);
           end;

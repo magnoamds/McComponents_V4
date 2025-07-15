@@ -29,7 +29,7 @@ typedef System::DelphiInterface<IMcService> _di_IMcService;
 //-- type declarations -------------------------------------------------------
 __interface  INTERFACE_UUID("{0A898A94-88F8-46F9-BA3F-DB6C27A2435F}") IMcService  : public System::IInterface 
 {
-	virtual System::UnicodeString __fastcall Resource(Umcjson::IMcJSONObject AJSONObject, System::Classes::TStream* ABinData) = 0 ;
+	virtual System::UnicodeString __fastcall Resource(Umcjson::IMcJSONObject AJSONObject, System::Classes::TStream* const ABinData) = 0 ;
 };
 
 //-- var, const, procedure ---------------------------------------------------

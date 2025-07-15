@@ -57,7 +57,7 @@ public:
 	__fastcall TMcServerService(Umcenginecontract::_di_IMcEngine AMcEngine);
 	__fastcall virtual ~TMcServerService();
 	__classmethod Umcservercontract::_di_IMcService __fastcall New(Umcenginecontract::_di_IMcEngine AMcEngine);
-	System::UnicodeString __fastcall Resource(Umcjson::IMcJSONObject AJSONObject, System::Classes::TStream* ABinData);
+	System::UnicodeString __fastcall Resource(Umcjson::IMcJSONObject AJSONObject, System::Classes::TStream* const ABinData);
 private:
 	void *__IMcService;	// Umcservercontract::IMcService 
 	

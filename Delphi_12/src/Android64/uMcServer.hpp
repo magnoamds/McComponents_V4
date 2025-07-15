@@ -40,10 +40,8 @@ private:
 	System::UnicodeString FSecurityKey;
 	System::Classes::TNotifyEvent FBeforeExecute;
 	Umccommons::TMcEvent FOnError;
-	System::Classes::TStream* FBinHeader;
-	System::Classes::TStream* FBinData;
 	System::UnicodeString __fastcall GetAbout();
-	System::UnicodeString __fastcall OnResource(const System::UnicodeString AValue);
+	System::UnicodeString __fastcall OnResource(const System::UnicodeString AValue, System::Classes::TStream* const ABody);
 	
 protected:
 	virtual void __fastcall Notification(System::Classes::TComponent* AComponent, System::Classes::TOperation AOperation);
