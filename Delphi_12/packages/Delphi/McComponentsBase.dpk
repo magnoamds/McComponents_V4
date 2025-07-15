@@ -45,6 +45,7 @@ contains
   uMcConsts in '..\..\src\uMcConsts.pas',
   uMcResult in '..\..\src\uMcResult.pas',
   uMcTools in '..\..\src\uMcTools.pas',
+  uMcDsPosition in '..\..\src\uMcDsPosition.pas',
   uMcEngineContract in '..\..\src\uMcEngineContract.pas',
   uMcEngineFireDAC in '..\..\src\uMcEngineFireDAC.pas',
   uMcParamsDB in '..\..\src\uMcParamsDB.pas',
@@ -68,8 +69,7 @@ contains
   uMcDriverFireDAC in '..\..\src\uMcDriverFireDAC.pas',
   uMcMemTable in '..\..\src\uMcMemTable.pas',
   uMcServer in '..\..\src\uMcServer.pas',
-  uMcBaseDataSet in '..\..\src\uMcBaseDataSet.pas',
-  uMcDSPosition in '..\..\src\uMcDSPosition.pas';
+  uMcBaseDataSet in '..\..\src\uMcBaseDataSet.pas';
 
 end.
 

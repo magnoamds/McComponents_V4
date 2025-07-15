@@ -27,7 +27,7 @@
 #include <uMcJSON.hpp>
 #include <uMcTypes.hpp>
 #include <uMcCache.hpp>
-#include <uMcDSPosition.hpp>
+#include <uMcDsPosition.hpp>
 #include <uMcJSONContract.hpp>
 
 //-- user supplied -----------------------------------------------------------
@@ -54,7 +54,7 @@ class PASCALIMPLEMENTATION TMcBaseDataSet : public System::Classes::TPersistent
 	typedef System::Classes::TPersistent inherited;
 	
 private:
-	Umcdsposition::TMcDSPosition* FMcDSPosition;
+	Umcdsposition::TMcDsPosition* FMcDsPosition;
 	bool FActive;
 	TMcConnection* FMcConnection;
 	Data::Db::TDataSet* FDataSet;

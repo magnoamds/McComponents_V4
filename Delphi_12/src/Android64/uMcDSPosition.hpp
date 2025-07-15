@@ -2,10 +2,10 @@
 // Copyright (c) 1995, 2024 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'uMcDSPosition.pas' rev: 36.00 (Android)
+// (DO NOT EDIT: machine generated header) 'uMcDsPosition.pas' rev: 36.00 (Android)
 
-#ifndef uMcDSPositionHPP
-#define uMcDSPositionHPP
+#ifndef uMcDsPositionHPP
+#define uMcDsPositionHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -26,9 +26,9 @@
 namespace Umcdsposition
 {
 //-- forward type declarations -----------------------------------------------
-class DELPHICLASS TMcDSPosition;
+class DELPHICLASS TMcDsPosition;
 //-- type declarations -------------------------------------------------------
-class PASCALIMPLEMENTATION TMcDSPosition : public System::TObject
+class PASCALIMPLEMENTATION TMcDsPosition : public System::TObject
 {
 	typedef System::TObject inherited;
 	
@@ -41,8 +41,8 @@ public:
 	void __fastcall SavePosition(Data::Db::TDataSet* ADataSet, const System::UnicodeString AKeyFields);
 	void __fastcall RestorePosition(Data::Db::TDataSet* DataSet);
 public:
-	/* TObject.Create */ inline __fastcall TMcDSPosition() : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TMcDSPosition() { }
+	/* TObject.Create */ inline __fastcall TMcDsPosition() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TMcDsPosition() { }
 	
 };
 
@@ -57,4 +57,4 @@ using namespace Umcdsposition;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcDSPositionHPP
+#endif	// uMcDsPositionHPP

@@ -44,7 +44,7 @@
 #include <uMcMemTable.hpp>
 #include <uMcServer.hpp>
 #include <uMcBaseDataSet.hpp>
-#include <uMcDSPosition.hpp>
+#include <uMcDsPosition.hpp>
 // SO_PFX: bpl
 // PRG_EXT: .so
 // OBJ_DIR: C:\Users\Public\Documents\Embarcadero\Studio\23.0\Dcp\Android
