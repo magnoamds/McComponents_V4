@@ -72,11 +72,9 @@ __interface  INTERFACE_UUID("{7CC1FE15-3BE2-4896-ADC9-BF2754AF9A34}") IMcRequest
 	virtual _di_IMcResponse __fastcall Patch() = 0 ;
 	virtual System::UnicodeString __fastcall FullRequestURL(const bool AIncludeParams = true) = 0 ;
 	virtual _di_IMcRequest __fastcall ClearBody() = 0 ;
-	virtual _di_IMcRequest __fastcall SynchronizedEvents(const bool AValue) = 0 ;
-	virtual _di_IMcRequest __fastcall AddHeader(const System::UnicodeString AName, const System::UnicodeString AValue, const Rest::Types::TRESTRequestParameterOptions AOptions = Rest::Types::TRESTRequestParameterOptions() ) = 0 ;
-	virtual _di_IMcRequest __fastcall AddParam(const System::UnicodeString AName, const System::UnicodeString AValue, const Rest::Types::TRESTRequestParameterKind AKind = (Rest::Types::TRESTRequestParameterKind)(0x6)) = 0 ;
-	virtual _di_IMcRequest __fastcall AddBody(const System::UnicodeString AContent, const Rest::Types::TRESTContentType AContentType = u"application/json") = 0 /* overload */;
-	virtual _di_IMcRequest __fastcall FallbackCharsetEncoding(const System::UnicodeString AFallbackCharsetEncoding) = 0 ;
+	virtual _di_IMcRequest __fastcall AddParam(const System::UnicodeString AName, const System::UnicodeString AValue) = 0 ;
+	virtual _di_IMcRequest __fastcall AddBody(const System::UnicodeString AContent) = 0 /* overload */;
+	virtual _di_IMcRequest __fastcall AddHeader(const System::UnicodeString AName, const System::UnicodeString AValue) = 0 ;
 	virtual _di_IMcRequest __fastcall AddBody(System::Classes::TStream* const AContent, const bool AOwns = true) = 0 /* overload */;
 	virtual _di_IMcRequest __fastcall AddUrlSegment(const System::UnicodeString AName, const System::UnicodeString AValue) = 0 ;
 	virtual _di_IMcRequest __fastcall ClearHeaders() = 0 ;
@@ -84,8 +82,8 @@ __interface  INTERFACE_UUID("{7CC1FE15-3BE2-4896-ADC9-BF2754AF9A34}") IMcRequest
 	virtual _di_IMcRequest __fastcall UserAgent(const System::UnicodeString AName) = 0 ;
 	virtual _di_IMcRequest __fastcall ContentType(const System::UnicodeString AContentType) = 0 ;
 	virtual _di_IMcRequest __fastcall AddField(const System::UnicodeString AFieldName, const System::UnicodeString AValue) = 0 /* overload */;
-	virtual _di_IMcRequest __fastcall AddFile(const System::UnicodeString AFieldName, const System::UnicodeString AFileName, const Rest::Types::TRESTContentType AContentType = Rest::Types::TRESTContentType()) = 0 /* overload */;
-	virtual _di_IMcRequest __fastcall AddFile(const System::UnicodeString AFieldName, System::Classes::TStream* const AValue, const System::UnicodeString AFileName = System::UnicodeString(), const Rest::Types::TRESTContentType AContentType = Rest::Types::TRESTContentType()) = 0 /* overload */;
+	virtual _di_IMcRequest __fastcall AddFile(const System::UnicodeString AFieldName, const System::UnicodeString AFileName, const System::UnicodeString AContentType = System::UnicodeString()) = 0 /* overload */;
+	virtual _di_IMcRequest __fastcall AddFile(const System::UnicodeString AFieldName, System::Classes::TStream* const AValue, const System::UnicodeString AFileName = System::UnicodeString(), const System::UnicodeString AContentType = System::UnicodeString()) = 0 /* overload */;
 	virtual _di_IMcRequest __fastcall Proxy(const System::UnicodeString AServer, const System::UnicodeString APassword, const System::UnicodeString AUsername, const int APort) = 0 ;
 	virtual _di_IMcRequest __fastcall DeactivateProxy() = 0 ;
 };

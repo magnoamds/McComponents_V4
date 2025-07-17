@@ -18,10 +18,14 @@
 #include <SysInit.hpp>
 #include <System.Classes.hpp>
 #include <System.SysUtils.hpp>
+#include <uMcRequestRestClient.hpp>
+#include <uMcResponseRestClient.hpp>
+#include <uMcRequestNetHTTP.hpp>
+#include <uMcResponseNetHTTP.hpp>
 #include <uMcCommons.hpp>
 #include <uMcParamsDB.hpp>
 #include <uMcJSON.hpp>
-#include <uMcRestRequest.hpp>
+#include <uMcRestContract.hpp>
 #include <uMcJSONContract.hpp>
 
 //-- user supplied -----------------------------------------------------------
@@ -33,6 +37,8 @@ class DELPHICLASS TMcProxy;
 class DELPHICLASS TMcBasicAuthentication;
 class DELPHICLASS TMcConnection;
 //-- type declarations -------------------------------------------------------
+enum DECLSPEC_DENUM TTypeRest : unsigned char { RESTClient, NetHTTP };
+
 class PASCALIMPLEMENTATION TMcProxy : public System::Classes::TPersistent
 {
 	typedef System::Classes::TPersistent inherited;
@@ -92,6 +98,7 @@ private:
 	bool FBinary;
 	int FTimeout;
 	Umcparamsdb::TMcParamsDB* FMParamsDB;
+	TTypeRest FTypeRest;
 	System::Classes::TNotifyEvent FOnBeforeConnect;
 	System::UnicodeString __fastcall GetAbout();
 	System::UnicodeString __fastcall GetBaseURL();
@@ -116,10 +123,11 @@ __published:
 	__property TMcProxy* Proxy = {read=FProxy, write=FProxy};
 	__property System::UnicodeString MyContent = {read=FMyContent, write=FMyContent};
 	__property System::UnicodeString SecurityKey = {read=FSecurityKey, write=FSecurityKey};
-	__property bool Compression = {read=FCompression, write=FCompression, default=1};
-	__property bool Binary = {read=FBinary, write=FBinary, default=1};
+	__property bool Compression = {read=FCompression, write=FCompression, default=0};
+	__property bool Binary = {read=FBinary, write=FBinary, default=0};
 	__property int Timeout = {read=FTimeout, write=FTimeout, default=30000};
 	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB, write=FMParamsDB};
+	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};
 	__property System::Classes::TNotifyEvent OnBeforeConnect = {read=FOnBeforeConnect, write=FOnBeforeConnect};
 };
 

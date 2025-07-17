@@ -24,9 +24,8 @@
 #include <uMcEngineFireDAC.hpp>
 #include <uMcParamsDB.hpp>
 #include <uMcRestContract.hpp>
-#include <uMcRestRequest.hpp>
-#include <uMcRestRequestClient.hpp>
-#include <uMcRestResponseClient.hpp>
+#include <uMcRequestRestClient.hpp>
+#include <uMcResponseRestClient.hpp>
 #include <uMcPrimaryKey.hpp>
 #include <uMcJSON.hpp>
 #include <uMcJSONArray.hpp>
@@ -45,6 +44,8 @@
 #include <uMcServer.hpp>
 #include <uMcBaseDataSet.hpp>
 #include <uMcDsPosition.hpp>
+#include <uMcRequestNetHTTP.hpp>
+#include <uMcResponseNetHTTP.hpp>
 // SO_PFX: bpl
 // PRG_EXT: .so
 // OBJ_DIR: C:\Users\Public\Documents\Embarcadero\Studio\23.0\Dcp\Android64

@@ -38,21 +38,22 @@ requires
   RESTComponents,
   FireDAC,
   FireDACCommonDriver,
-  FireDACCommon;
+  FireDACCommon,
+  IndySystem,
+  IndyProtocols,
+  IndyCore;
 
 contains
   uMcCommons in '..\..\src\uMcCommons.pas',
   uMcConsts in '..\..\src\uMcConsts.pas',
   uMcResult in '..\..\src\uMcResult.pas',
   uMcTools in '..\..\src\uMcTools.pas',
-  uMcDsPosition in '..\..\src\uMcDsPosition.pas',
   uMcEngineContract in '..\..\src\uMcEngineContract.pas',
   uMcEngineFireDAC in '..\..\src\uMcEngineFireDAC.pas',
   uMcParamsDB in '..\..\src\uMcParamsDB.pas',
   uMcRestContract in '..\..\src\uMcRestContract.pas',
-  uMcRestRequest in '..\..\src\uMcRestRequest.pas',
-  uMcRestRequestClient in '..\..\src\uMcRestRequestClient.pas',
-  uMcRestResponseClient in '..\..\src\uMcRestResponseClient.pas',
+  uMcRequestRestClient in '..\..\src\uMcRequestRestClient.pas',
+  uMcResponseRestClient in '..\..\src\uMcResponseRestClient.pas',
   uMcPrimaryKey in '..\..\src\uMcPrimaryKey.pas',
   uMcJSON in '..\..\src\uMcJSON.pas',
   uMcJSONArray in '..\..\src\uMcJSONArray.pas',
@@ -69,7 +70,10 @@ contains
   uMcDriverFireDAC in '..\..\src\uMcDriverFireDAC.pas',
   uMcMemTable in '..\..\src\uMcMemTable.pas',
   uMcServer in '..\..\src\uMcServer.pas',
-  uMcBaseDataSet in '..\..\src\uMcBaseDataSet.pas';
+  uMcBaseDataSet in '..\..\src\uMcBaseDataSet.pas',
+  uMcDsPosition in '..\..\src\uMcDsPosition.pas',
+  uMcRequestNetHTTP in '..\..\src\uMcRequestNetHTTP.pas',
+  uMcResponseNetHTTP in '..\..\src\uMcResponseNetHTTP.pas';
 
 end.
 
