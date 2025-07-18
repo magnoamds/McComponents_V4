@@ -55,9 +55,22 @@ object F_Main: TF_Main
     object lbl_Tempo: TLabel
       Left = 508
       Top = 53
-      Width = 104
+      Width = 88
       Height = 25
-      Caption = 'Tempo: 0 ms'
+      Caption = 'Tempo: 0 s'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbl_Records: TLabel
+      Left = 508
+      Top = 86
+      Width = 97
+      Height = 25
+      Caption = 'Record(s): 0'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -19
@@ -186,89 +199,14 @@ object F_Main: TF_Main
     BaseURL = 'http://localhost:9095'
     Resource = 'resource'
     ParamsDB.Port = 0
+    TypeRest = NetHTTP
     OnBeforeConnect = McConnectionBeforeConnect
     Left = 544
     Top = 192
   end
   object McMemTable: TMcMemTable
     ActiveStoredUsage = []
-    FieldDefs = <
-      item
-        Name = 'ID'
-        Attributes = [faRequired]
-        DataType = ftInteger
-      end
-      item
-        Name = 'CODIGO_BARRAS'
-        DataType = ftString
-        Size = 14
-      end
-      item
-        Name = 'DESCRICAO'
-        Attributes = [faRequired]
-        DataType = ftString
-        Size = 100
-      end
-      item
-        Name = 'ID_UND'
-        Attributes = [faRequired]
-        DataType = ftInteger
-      end
-      item
-        Name = 'ID_GRUPO'
-        Attributes = [faRequired]
-        DataType = ftInteger
-      end
-      item
-        Name = 'QTD_MINIMA'
-        DataType = ftFMTBcd
-        Precision = 18
-        Size = 3
-      end
-      item
-        Name = 'QTD_MAXIMA'
-        DataType = ftFMTBcd
-        Precision = 18
-        Size = 3
-      end
-      item
-        Name = 'QTD_ESTOQUE'
-        DataType = ftFMTBcd
-        Precision = 18
-        Size = 3
-      end
-      item
-        Name = 'VALOR_CUSTO'
-        DataType = ftFMTBcd
-        Precision = 18
-        Size = 2
-      end
-      item
-        Name = 'VALOR_VENDA'
-        DataType = ftFMTBcd
-        Precision = 18
-        Size = 2
-      end
-      item
-        Name = 'OBS'
-        DataType = ftMemo
-      end
-      item
-        Name = 'PHOTO'
-        DataType = ftBlob
-      end
-      item
-        Name = 'ATIVO'
-        DataType = ftSmallint
-      end
-      item
-        Name = 'CREATED_AT'
-        DataType = ftTimeStamp
-      end
-      item
-        Name = 'UPDATED_AT'
-        DataType = ftTimeStamp
-      end>
+    FieldDefs = <>
     IndexDefs = <>
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
@@ -278,6 +216,7 @@ object F_Main: TF_Main
     UpdateOptions.CheckRequired = False
     UpdateOptions.AutoCommitUpdates = True
     StoreDefs = True
+    Binary = False
     McBaseActive = True
     Cache.McCache = McCache
     Connection = McConnection

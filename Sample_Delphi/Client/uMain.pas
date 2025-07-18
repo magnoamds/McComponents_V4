@@ -34,6 +34,7 @@ type
     cbx_Binary: TCheckBox;
     lbl_Tempo: TLabel;
     btn_Close: TButton;
+    lbl_Records: TLabel;
     procedure btn_OpenClick(Sender: TObject);
     procedure btn_CancelCommitClick(Sender: TObject);
     procedure btn_CommitUpdClick(Sender: TObject);
@@ -65,7 +66,8 @@ end;
 procedure TF_Main.btn_CloseClick(Sender: TObject);
 begin
   DataSource.DataSet.Active := False;
-  lbl_Tempo.Caption := 'Tempo: 0 ms';
+  lbl_Tempo.Caption := 'Tempo: 0 s';
+  lbl_Records.Caption := 'Record(s): 0';
 end;
 
 procedure TF_Main.btn_CommitUpdClick(Sender: TObject);
@@ -84,13 +86,16 @@ begin
   DBImage.DataField := '';
 
   McMemTable.Cache.Active := cbx_McCached.Checked;
+  McMemTable.Binary := cbx_Binary.Checked;
+
   lInicio := GetTickCount;
   try
     DataSource.DataSet.Active := True;
   finally
     lFim := GetTickCount;
     lTempo := ((lFim - lInicio) / 1000);
-    lbl_Tempo.Caption := Format('Tempo: %g ms', [lTempo]);
+    lbl_Tempo.Caption := Format('Tempo: %g s', [lTempo]);
+    lbl_Records.Caption := Format('Record(s): %d', [DataSource.DataSet.RecordCount]);
   end;
 
   if (DataSource.DataSet.FindField('photo') <> nil) then
@@ -102,7 +107,6 @@ begin
   McConnection.BaseURL := edt_BaseUrl.Text;
   McConnection.Resource := edt_Resource.Text;
   McConnection.Compression := cbx_Compression.Checked;
-  McConnection.Binary := cbx_Binary.Checked;
 end;
 
 procedure TF_Main.SpeedButton1Click(Sender: TObject);
