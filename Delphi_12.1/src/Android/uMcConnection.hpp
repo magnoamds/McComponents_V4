@@ -99,7 +99,6 @@ private:
 	TMcProxy* FProxy;
 	System::UnicodeString FMyContent;
 	System::UnicodeString FSecurityKey;
-	bool FCompression;
 	int FTimeout;
 	Umcparamsdb::TMcParamsDB* FMParamsDB;
 	TTypeRest FTypeRest;
@@ -127,7 +126,6 @@ __published:
 	__property TMcProxy* Proxy = {read=FProxy, write=FProxy};
 	__property System::UnicodeString MyContent = {read=FMyContent, write=FMyContent};
 	__property System::UnicodeString SecurityKey = {read=FSecurityKey, write=FSecurityKey};
-	__property bool Compression = {read=FCompression, write=FCompression, default=0};
 	__property int Timeout = {read=FTimeout, write=FTimeout, default=30000};
 	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB, write=FMParamsDB};
 	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};

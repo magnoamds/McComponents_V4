@@ -80,7 +80,6 @@ public:
 	__classmethod System::UnicodeString __fastcall StreamToStr(System::Classes::TStream* AValue);
 	static Umcjson::IMcJSONArray __fastcall FieldDefsToJSONArray(Data::Db::TDataSet* ADataSet);
 	static void __fastcall JSONArrayToFieldDefs(Umcjson::IMcJSONArray AJSONArray, Data::Db::TDataSet* ADataSet);
-	static Umcjson::IMcJSONArray __fastcall SaveStructure(Data::Db::TDataSet* const ADataSet);
 	static void __fastcall ConfigProviderFlags(Umcjson::IMcJSONArray AJSONArray, Data::Db::TDataSet* ADataSet);
 	static void __fastcall ConfigPrimaryKey(Umcjson::IMcJSONArray AJSONArray, Umcprimarykey::TMcPrimaryKeys* APrimaryKey);
 	static Umcjson::IMcJSONArray __fastcall ParamsToJSONArray(Data::Db::TParams* AParams);
