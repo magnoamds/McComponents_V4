@@ -103,9 +103,12 @@ private:
 	Umcparamsdb::TMcParamsDB* FMParamsDB;
 	TTypeRest FTypeRest;
 	System::Classes::TNotifyEvent FOnBeforeConnect;
+	bool FConnect;
+	void __fastcall SetConnect(const bool Value);
 	System::UnicodeString __fastcall GetAbout();
 	System::UnicodeString __fastcall GetBaseURL();
 	System::UnicodeString __fastcall GetResource();
+	void __fastcall ValidateParamsConnection();
 	
 public:
 	__fastcall virtual TMcConnection(System::Classes::TComponent* AOwner);
@@ -120,6 +123,7 @@ public:
 	
 __published:
 	__property System::UnicodeString About = {read=GetAbout};
+	__property bool Connect = {read=FConnect, write=SetConnect, default=0};
 	__property System::UnicodeString BaseURL = {read=GetBaseURL, write=FBaseURL};
 	__property System::UnicodeString Resource = {read=GetResource, write=FResource};
 	__property TMcBasicAuthentication* BasicAuthentication = {read=FBasicAuthentication, write=FBasicAuthentication};
