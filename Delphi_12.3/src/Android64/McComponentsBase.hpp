@@ -47,7 +47,7 @@
 #include <uMcRequestNetHTTP.hpp>
 #include <uMcResponseNetHTTP.hpp>
 // SO_PFX: bpl
-// PRG_EXT: .a
+// PRG_EXT: .so
 // OBJ_DIR: C:\Users\Public\Documents\Embarcadero\Studio\23.0\Dcp\Android64
 // OBJ_EXT: .o
 
