@@ -23,8 +23,6 @@ namespace Umctypes
 {
 //-- forward type declarations -----------------------------------------------
 //-- type declarations -------------------------------------------------------
-enum class DECLSPEC_DENUM TMcTypeDataSet : unsigned char { mcFireDAC, mcUniDAC, mcZeos };
-
 enum class DECLSPEC_DENUM TMcAction : unsigned char { mcConnExecSQL, mcOpen, mcPersistence, mcExecSQL, mcFile };
 
 enum class DECLSPEC_DENUM TMcOperation : unsigned char { mcNone, mcInsert, mcUpdate, mcDelete };

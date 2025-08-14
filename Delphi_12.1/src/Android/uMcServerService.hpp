@@ -45,7 +45,6 @@ private:
 	Umcenginecontract::_di_IMcEngine FMcEngine;
 	bool FBinary;
 	bool FMcCache;
-	Umctypes::TMcTypeDataSet FMcTypeDataSet;
 	void __fastcall SetParamsDataSet(Umcenginecontract::_di_IMcEngine AMcEngine, Umcjson::IMcJSONArray AJSONArray);
 	System::UnicodeString __fastcall McFile(Umcjson::IMcJSONObject AJSONObject);
 	System::UnicodeString __fastcall Open(Umcjson::IMcJSONArray AJSONItems, System::Classes::TStream* ABinData);

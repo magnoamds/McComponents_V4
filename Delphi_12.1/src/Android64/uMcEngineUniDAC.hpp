@@ -20,7 +20,6 @@
 #include <System.SysUtils.hpp>
 #include <Data.DB.hpp>
 #include <uMcEngineContract.hpp>
-#include <uMcTypes.hpp>
 #include <Uni.hpp>
 
 //-- user supplied -----------------------------------------------------------
@@ -38,7 +37,6 @@ private:
 	Uni::TUniConnection* FConnection;
 	Uni::TUniQuery* FQry;
 	Data::Db::TParams* FParams;
-	Umctypes::TMcTypeDataSet FMcTypeDataSet;
 	
 public:
 	__fastcall TMcEngineUniDAC(Uni::TUniConnection* AConexao);
@@ -59,7 +57,6 @@ public:
 	Umcenginecontract::_di_IMcEngine __fastcall CloseConnection();
 	bool __fastcall ConnectionExecSQL(const System::UnicodeString ASQL);
 	Umcenginecontract::_di_IMcEngine __fastcall SaveToStream(System::Classes::TStream* AStream);
-	Umctypes::TMcTypeDataSet __fastcall GetMcTypeDataSet();
 private:
 	void *__IMcEngine;	// Umcenginecontract::IMcEngine 
 	

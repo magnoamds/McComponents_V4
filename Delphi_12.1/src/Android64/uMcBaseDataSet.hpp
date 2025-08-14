@@ -37,8 +37,6 @@ namespace Umcbasedataset
 //-- forward type declarations -----------------------------------------------
 class DELPHICLASS TMcBaseDataSet;
 //-- type declarations -------------------------------------------------------
-using Umctypes::TMcTypeDataSet;
-
 using Umcconnection::TMcConnection;
 
 using Umccache::TMcCached;
@@ -61,6 +59,7 @@ private:
 	System::Classes::TStrings* FSQL;
 	Data::Db::TParams* FParams;
 	bool FBinary;
+	bool FPostInServer;
 	Umcjson::IMcJSONArray FJSONFieldDefs;
 	Umcjson::IMcJSONArray FJSONData;
 	bool FLoading;
@@ -69,19 +68,18 @@ private:
 	Umcjson::IMcJSONObject FJSONRecord;
 	TMcPrimaryKeys* FMcPrimaryKeys;
 	Umctypes::TMcOperation FOperation;
-	TMcTypeDataSet FMcTypeDataSet;
 	System::Classes::TStream* FBinData;
 	TMcBinCallBack FBinCallBack;
 	void __fastcall SetSQL(System::Classes::TStrings* const AValue);
 	void __fastcall SetMcPrimaryKeys(TMcPrimaryKeys* const AValue);
 	void __fastcall OnOnChangeSQL(System::TObject* Sender);
 	void __fastcall RefreshDetail();
+	void __fastcall ExecSQL();
 	System::UnicodeString __fastcall GetAbout();
 	System::Classes::TStrings* __fastcall GetSQL();
-	void __fastcall ExecSQL();
 	
 public:
-	__fastcall TMcBaseDataSet(System::Classes::TComponent* ADataSet, TMcTypeDataSet AType);
+	__fastcall TMcBaseDataSet(System::Classes::TComponent* ADataSet);
 	__fastcall virtual ~TMcBaseDataSet();
 	bool __fastcall McIsDesigning(System::Classes::TComponent* AComp);
 	TMcConnection* __fastcall McFindDefaultConnection(System::Classes::TComponent* AComp);
@@ -108,6 +106,7 @@ public:
 	__property bool Loading = {read=FLoading, write=FLoading, nodefault};
 	__property Data::Db::TParams* Params = {read=FParams, write=FParams};
 	__property bool Binary = {read=FBinary, write=FBinary, default=0};
+	__property bool PostInServer = {read=FPostInServer, write=FPostInServer, default=1};
 	__property System::UnicodeString About = {read=GetAbout};
 	__property TMcConnection* Connection = {read=FMcConnection, write=FMcConnection};
 	__property System::Classes::TStrings* SQL = {read=GetSQL, write=SetSQL};

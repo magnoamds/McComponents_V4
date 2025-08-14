@@ -52,6 +52,7 @@ private:
 	Umcbasedataset::TMcConnection* __fastcall GetMcConnection();
 	System::Classes::TStrings* __fastcall GetHcSQL();
 	bool __fastcall GetBinary();
+	bool __fastcall GetPostInServer();
 	void __fastcall SetMcBaseActive(const bool Value);
 	void __fastcall SetMcParams(Data::Db::TParams* const Value);
 	void __fastcall SetMcPrimaryKeys(Umcbasedataset::TMcPrimaryKeys* const Value);
@@ -60,6 +61,7 @@ private:
 	void __fastcall SetMcSQL(System::Classes::TStrings* const Value);
 	void __fastcall BinCallBack(System::Classes::TStream* AStream);
 	void __fastcall SetBinary(const bool Value);
+	void __fastcall SetPostInServer(const bool Value);
 	
 protected:
 	virtual void __fastcall Notification(System::Classes::TComponent* AComponent, System::Classes::TOperation AOperation);
@@ -94,6 +96,7 @@ __published:
 	__property MasterSource;
 	__property System::UnicodeString About = {read=GetMcAbout};
 	__property bool Binary = {read=GetBinary, write=SetBinary, nodefault};
+	__property bool PostInServer = {read=GetPostInServer, write=SetPostInServer, nodefault};
 	__property bool McBaseActive = {read=GetMcBaseActive, write=SetMcBaseActive, nodefault};
 	__property Umcbasedataset::TMcCached* Cache = {read=GetMcCache, write=SetMcCache};
 	__property Umcbasedataset::TMcConnection* Connection = {read=GetMcConnection, write=SetMcConnection};

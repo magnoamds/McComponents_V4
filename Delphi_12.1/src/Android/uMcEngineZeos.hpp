@@ -24,7 +24,6 @@
 #include <ZAbstractConnection.hpp>
 #include <ZConnection.hpp>
 #include <ZTransaction.hpp>
-#include <uMcTypes.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
@@ -43,7 +42,6 @@ private:
 	Zconnection::TZConnection* FConnection;
 	Zdataset::TZQuery* FQry;
 	Data::Db::TParams* FParams;
-	Umctypes::TMcTypeDataSet FMcTypeDataSet;
 	
 public:
 	__fastcall TMcEngineZeos(Zconnection::TZConnection* AConexao);
@@ -64,7 +62,6 @@ public:
 	Umcenginecontract::_di_IMcEngine __fastcall CloseConnection();
 	bool __fastcall ConnectionExecSQL(const System::UnicodeString ASQL);
 	Umcenginecontract::_di_IMcEngine __fastcall SaveToStream(System::Classes::TStream* AStream);
-	Umctypes::TMcTypeDataSet __fastcall GetMcTypeDataSet();
 private:
 	void *__IMcEngine;	// Umcenginecontract::IMcEngine 
 	
