@@ -33,27 +33,8 @@
 namespace Umctools
 {
 //-- forward type declarations -----------------------------------------------
-struct TFieldStructure;
 class DELPHICLASS TMcTools;
 //-- type declarations -------------------------------------------------------
-struct DECLSPEC_DRECORD TFieldStructure
-{
-public:
-	System::Classes::TAlignment Alignment;
-	Data::Db::TFieldType FieldType;
-	int Size;
-	int Precision;
-	System::UnicodeString FieldName;
-	System::UnicodeString Origin;
-	System::UnicodeString DisplayLabel;
-	bool Key;
-	bool Required;
-	bool Visible;
-	bool ReadOnly;
-	Data::Db::TAutoRefreshFlag AutoGenerateValue;
-};
-
-
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TMcTools : public System::TObject
 {
@@ -80,7 +61,6 @@ public:
 	__classmethod System::UnicodeString __fastcall StreamToStr(System::Classes::TStream* AValue);
 	static Umcjson::IMcJSONArray __fastcall FieldDefsToJSONArray(Data::Db::TDataSet* ADataSet);
 	static void __fastcall JSONArrayToFieldDefs(Umcjson::IMcJSONArray AJSONArray, Data::Db::TDataSet* ADataSet);
-	static void __fastcall ConfigProviderFlags(Umcjson::IMcJSONArray AJSONArray, Data::Db::TDataSet* ADataSet);
 	static void __fastcall ConfigPrimaryKey(Umcjson::IMcJSONArray AJSONArray, Umcprimarykey::TMcPrimaryKeys* APrimaryKey);
 	static Umcjson::IMcJSONArray __fastcall ParamsToJSONArray(Data::Db::TParams* AParams);
 	static void __fastcall JSONArrayToParams(Umcjson::IMcJSONArray AJSONArray, Data::Db::TParams* AParams);

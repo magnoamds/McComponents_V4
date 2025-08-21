@@ -43,7 +43,6 @@ private:
 	Umcjson::IMcJSONArray FExecSQL;
 	Umcconnection::TMcConnection* FMcConnection;
 	bool FClearOnClose;
-	Umctypes::TMcTypeDataSet FMcTypeDataSet;
 	System::UnicodeString __fastcall GetAbout();
 	bool __fastcall RequestPersistence();
 	bool __fastcall RequestExecSQL();
@@ -54,8 +53,7 @@ protected:
 public:
 	__fastcall virtual TMcCache(System::Classes::TComponent* AOwner);
 	__fastcall virtual ~TMcCache();
-	void __fastcall SetMcTypeDataSet(Umctypes::TMcTypeDataSet AValue);
-	void __fastcall AddPersistence(const Umcjson::IMcJSONObject AJSONObject, Umctypes::TMcTypeDataSet AMcTypeDataSet);
+	void __fastcall AddPersistence(const Umcjson::IMcJSONObject AJSONObject);
 	void __fastcall AddExecSQL(System::UnicodeString ASQL, Umcjson::IMcJSONArray AParams);
 	TMcCache* __fastcall Clear();
 	int __fastcall CacheCount();

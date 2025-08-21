@@ -20,7 +20,6 @@
 #include <System.SysUtils.hpp>
 #include <Data.DB.hpp>
 #include <uMcEngineContract.hpp>
-#include <uMcTypes.hpp>
 #include <FireDAC.Comp.Client.hpp>
 #include <FireDAC.Stan.Param.hpp>
 #include <FireDAC.Comp.DataSet.hpp>
@@ -45,7 +44,6 @@ private:
 	Firedac::Comp::Client::TFDCustomConnection* FConnection;
 	Firedac::Comp::Client::TFDQuery* FQry;
 	Data::Db::TParams* FParams;
-	Umctypes::TMcTypeDataSet FMcTypeDataSet;
 	
 public:
 	__fastcall TMcEngineFireDAC(Firedac::Comp::Client::TFDCustomConnection* AConexao, bool AOwner);
@@ -66,7 +64,6 @@ public:
 	Umcenginecontract::_di_IMcEngine __fastcall CloseConnection();
 	bool __fastcall ConnectionExecSQL(const System::UnicodeString ASQL);
 	Umcenginecontract::_di_IMcEngine __fastcall SaveToStream(System::Classes::TStream* AStream);
-	Umctypes::TMcTypeDataSet __fastcall GetMcTypeDataSet();
 private:
 	void *__IMcEngine;	// Umcenginecontract::IMcEngine 
 	

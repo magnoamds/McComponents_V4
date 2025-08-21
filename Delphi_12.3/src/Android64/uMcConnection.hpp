@@ -100,10 +100,10 @@ private:
 	System::Classes::TNotifyEvent FOnBeforeConnect;
 	bool FConnect;
 	void __fastcall SetConnect(const bool Value);
+	void __fastcall ValidateParamsConnection();
 	System::UnicodeString __fastcall GetAbout();
 	System::UnicodeString __fastcall GetBaseURL();
 	System::UnicodeString __fastcall GetResource();
-	void __fastcall ValidateParamsConnection();
 	
 public:
 	__fastcall virtual TMcConnection(System::Classes::TComponent* AOwner);

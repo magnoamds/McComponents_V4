@@ -37,7 +37,6 @@ static _DELPHI_CONST System::WideChar _MC_COMPATIBILITY = (System::WideChar)(0x3
 #define _KEY_SECURITYKEY u"securitykey"
 #define _KEY_PARAMSDB u"paramsdb"
 #define _KEY_MCCACHE u"mccache"
-#define _KEY_MCTYPEDS u"mctypeds"
 #define _KEY_MCACTION u"mcaction"
 #define _KEY_OPERATION u"operation"
 #define _KEY_ITEMS u"items"

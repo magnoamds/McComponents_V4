@@ -18,7 +18,6 @@
 #include <SysInit.hpp>
 #include <System.Classes.hpp>
 #include <Data.DB.hpp>
-#include <uMcTypes.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
@@ -45,7 +44,6 @@ __interface  INTERFACE_UUID("{CC056AF1-2C82-4721-8B7B-FAF7D840291C}") IMcEngine 
 	virtual _di_IMcEngine __fastcall CloseConnection() = 0 ;
 	virtual bool __fastcall ConnectionExecSQL(const System::UnicodeString ASQL) = 0 ;
 	virtual _di_IMcEngine __fastcall SaveToStream(System::Classes::TStream* AStream) = 0 ;
-	virtual Umctypes::TMcTypeDataSet __fastcall GetMcTypeDataSet() = 0 ;
 };
 
 //-- var, const, procedure ---------------------------------------------------

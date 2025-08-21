@@ -65,9 +65,9 @@ private:
 	void __fastcall SetMcCache(Umccache::TMcCached* const Value);
 	void __fastcall SetMcConnection(Umcbasedataset::TMcConnection* const Value);
 	void __fastcall SetMcSQL(System::Classes::TStrings* const Value);
-	void __fastcall BinCallBack(System::Classes::TStream* AStream);
 	void __fastcall SetBinary(const bool Value);
 	void __fastcall SetPostInServer(const bool Value);
+	void __fastcall BinCallBack(System::Classes::TStream* AStream);
 	
 protected:
 	virtual void __fastcall Notification(System::Classes::TComponent* AComponent, System::Classes::TOperation AOperation);

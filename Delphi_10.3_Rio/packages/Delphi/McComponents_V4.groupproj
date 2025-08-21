@@ -3,10 +3,16 @@
         <ProjectGuid>{54967053-CD2B-4EEE-8C54-0A3CA5F06AD0}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="McComponentsBase.dproj">
+        <Projects Include="McComponentsBase_26.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="McComponents.dproj">
+        <Projects Include="McComponents_26.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="McComponentsUniDAC_26.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="McComponentsZeos_26.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -17,32 +23,50 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="McComponentsBase">
-        <MSBuild Projects="McComponentsBase.dproj"/>
+    <Target Name="McComponentsBase_26">
+        <MSBuild Projects="McComponentsBase_26.dproj"/>
     </Target>
-    <Target Name="McComponentsBase:Clean">
-        <MSBuild Projects="McComponentsBase.dproj" Targets="Clean"/>
+    <Target Name="McComponentsBase_26:Clean">
+        <MSBuild Projects="McComponentsBase_26.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="McComponentsBase:Make">
-        <MSBuild Projects="McComponentsBase.dproj" Targets="Make"/>
+    <Target Name="McComponentsBase_26:Make">
+        <MSBuild Projects="McComponentsBase_26.dproj" Targets="Make"/>
     </Target>
-    <Target Name="McComponents">
-        <MSBuild Projects="McComponents.dproj"/>
+    <Target Name="McComponents_26">
+        <MSBuild Projects="McComponents_26.dproj"/>
     </Target>
-    <Target Name="McComponents:Clean">
-        <MSBuild Projects="McComponents.dproj" Targets="Clean"/>
+    <Target Name="McComponents_26:Clean">
+        <MSBuild Projects="McComponents_26.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="McComponents:Make">
-        <MSBuild Projects="McComponents.dproj" Targets="Make"/>
+    <Target Name="McComponents_26:Make">
+        <MSBuild Projects="McComponents_26.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="McComponentsUniDAC_26">
+        <MSBuild Projects="McComponentsUniDAC_26.dproj"/>
+    </Target>
+    <Target Name="McComponentsUniDAC_26:Clean">
+        <MSBuild Projects="McComponentsUniDAC_26.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="McComponentsUniDAC_26:Make">
+        <MSBuild Projects="McComponentsUniDAC_26.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="McComponentsZeos_26">
+        <MSBuild Projects="McComponentsZeos_26.dproj"/>
+    </Target>
+    <Target Name="McComponentsZeos_26:Clean">
+        <MSBuild Projects="McComponentsZeos_26.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="McComponentsZeos_26:Make">
+        <MSBuild Projects="McComponentsZeos_26.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="McComponentsBase;McComponents"/>
+        <CallTarget Targets="McComponentsBase_26;McComponents_26;McComponentsUniDAC_26;McComponentsZeos_26"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="McComponentsBase:Clean;McComponents:Clean"/>
+        <CallTarget Targets="McComponentsBase_26:Clean;McComponents_26:Clean;McComponentsUniDAC_26:Clean;McComponentsZeos_26:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="McComponentsBase:Make;McComponents:Make"/>
+        <CallTarget Targets="McComponentsBase_26:Make;McComponents_26:Make;McComponentsUniDAC_26:Make;McComponentsZeos_26:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
