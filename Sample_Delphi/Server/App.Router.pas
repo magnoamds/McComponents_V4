@@ -32,18 +32,16 @@ begin
       lStream: TStream;
     begin
       try
-        if AReq.ContentType.ToLower.Contains('application/json') then
-          ARes.ContentType('application/json')
-              .Send(DM.McServer.Resource(AReq.Body()))
-        else
-        begin
-          lStream := DM.McServer.Resource(AReq.ContentFields.Field('mcdata').AsStream);
-          try
-            ARes.SendFile(lStream, 'application/octet-stream');
-          finally
-            FreeAndNil(lStream);
-          end;
+        // Usado para McComponents V4.1.0
+		lStream := DM.McServer.ProcessRequest(AReq.RawWebRequest.RawContent);
+        try
+          ARes.SendFile(lStream);
+        finally
+          FreeAndNil(lStream);
         end;
+
+        // Usado para McComponents V4.0.6 a baixo
+		//ARes.Send(DM.McServer.Resource(AReq.Body));
       except
         on E: exception do
           ARes.Send(E.Message);
