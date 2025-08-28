@@ -39,6 +39,8 @@ class DELPHICLASS TMcConnection;
 //-- type declarations -------------------------------------------------------
 enum DECLSPEC_DENUM TTypeRest : unsigned char { RESTClient, NetHTTP };
 
+enum DECLSPEC_DENUM TContentKind : unsigned char { ckString, ckStream };
+
 class PASCALIMPLEMENTATION TMcProxy : public System::Classes::TPersistent
 {
 	typedef System::Classes::TPersistent inherited;
@@ -99,6 +101,7 @@ private:
 	TTypeRest FTypeRest;
 	System::Classes::TNotifyEvent FOnBeforeConnect;
 	bool FConnect;
+	TContentKind FContentKind;
 	void __fastcall SetConnect(const bool Value);
 	void __fastcall ValidateParamsConnection();
 	System::UnicodeString __fastcall GetAbout();
@@ -128,6 +131,7 @@ __published:
 	__property int Timeout = {read=FTimeout, write=FTimeout, default=30000};
 	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB, write=FMParamsDB};
 	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};
+	__property TContentKind ContentKind = {read=FContentKind, write=FContentKind, default=1};
 	__property System::Classes::TNotifyEvent OnBeforeConnect = {read=FOnBeforeConnect, write=FOnBeforeConnect};
 };
 

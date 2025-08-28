@@ -49,8 +49,9 @@ protected:
 public:
 	__fastcall virtual TMcServer(System::Classes::TComponent* AOwner);
 	__fastcall virtual ~TMcServer();
-	System::UnicodeString __fastcall Resource(const System::UnicodeString AValue)/* overload */;
-	System::Classes::TStream* __fastcall Resource(System::Classes::TStream* const AValue)/* overload */;
+	System::UnicodeString __fastcall Resource(const System::UnicodeString AValue);
+	System::Classes::TStream* __fastcall ProcessRequest(const System::UnicodeString AValue)/* overload */;
+	System::Classes::TStream* __fastcall ProcessRequest(const System::Sysutils::TBytes AValue)/* overload */;
 	__property System::UnicodeString MyContent = {read=FMyContent};
 	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB};
 	

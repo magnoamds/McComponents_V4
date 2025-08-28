@@ -108,8 +108,8 @@ extern DELPHI_PACKAGE System::ResourceString _sFileOperationNotFound;
 #define Umcconsts_sFileOperationNotFound System::LoadResourceString(&Umcconsts::_sFileOperationNotFound)
 extern DELPHI_PACKAGE System::ResourceString _sContentTypeInvalid;
 #define Umcconsts_sContentTypeInvalid System::LoadResourceString(&Umcconsts::_sContentTypeInvalid)
-extern DELPHI_PACKAGE System::ResourceString _sContentInvalid;
-#define Umcconsts_sContentInvalid System::LoadResourceString(&Umcconsts::_sContentInvalid)
+extern DELPHI_PACKAGE System::ResourceString _sContentKindInvalid;
+#define Umcconsts_sContentKindInvalid System::LoadResourceString(&Umcconsts::_sContentKindInvalid)
 extern DELPHI_PACKAGE System::ResourceString _sMcIncompatibleVersion;
 #define Umcconsts_sMcIncompatibleVersion System::LoadResourceString(&Umcconsts::_sMcIncompatibleVersion)
 extern DELPHI_PACKAGE System::ResourceString _sConnectionNotEstablished;
