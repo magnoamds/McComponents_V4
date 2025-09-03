@@ -102,7 +102,9 @@ private:
 	System::Classes::TNotifyEvent FOnBeforeConnect;
 	bool FConnect;
 	TContentKind FContentKind;
+	unsigned FRetryRequest;
 	void __fastcall SetConnect(const bool Value);
+	void __fastcall SetRetryRequest(const unsigned Value);
 	void __fastcall ValidateParamsConnection();
 	System::UnicodeString __fastcall GetAbout();
 	System::UnicodeString __fastcall GetBaseURL();
@@ -129,6 +131,7 @@ __published:
 	__property System::UnicodeString MyContent = {read=FMyContent, write=FMyContent};
 	__property System::UnicodeString SecurityKey = {read=FSecurityKey, write=FSecurityKey};
 	__property int Timeout = {read=FTimeout, write=FTimeout, default=30000};
+	__property unsigned RetryRequest = {read=FRetryRequest, write=SetRetryRequest, default=1};
 	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB, write=FMParamsDB};
 	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};
 	__property TContentKind ContentKind = {read=FContentKind, write=FContentKind, default=1};
