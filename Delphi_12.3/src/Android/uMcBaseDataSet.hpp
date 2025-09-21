@@ -20,6 +20,7 @@
 #include <System.SysUtils.hpp>
 #include <Data.DB.hpp>
 #include <System.Generics.Collections.hpp>
+#include <System.Rtti.hpp>
 #include <uMcConnection.hpp>
 #include <uMcCommons.hpp>
 #include <uMcTools.hpp>
@@ -92,6 +93,7 @@ public:
 	Umcjson::IMcJSONArray __fastcall Persistence();
 	bool __fastcall RequestOpen();
 	bool __fastcall RequestPersistence();
+	void __fastcall InternalPost();
 	void __fastcall DoBeforeOpen(Data::Db::TDataSource* ADataSource = (Data::Db::TDataSource*)(0x0), System::UnicodeString AMasterFields = System::UnicodeString(), System::UnicodeString ADetailFields = System::UnicodeString());
 	void __fastcall DoAfterOpen();
 	void __fastcall DoBeforeClose();

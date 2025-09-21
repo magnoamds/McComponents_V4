@@ -136,7 +136,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\src\McComponents.dcr"/>
+        <DCCReference Include="..\..\src\McComponents.dcr"/>
         <DCCReference Include="McComponentsBase_28.dcp"/>
         <DCCReference Include="rtl.dcp"/>
         <DCCReference Include="soaprtl.dcp"/>
@@ -147,7 +147,6 @@
         <DCCReference Include="FireDAC.dcp"/>
         <DCCReference Include="FireDACCommonDriver.dcp"/>
         <DCCReference Include="FireDACCommon.dcp"/>
-        <DCCReference Include="..\..\src\uMcComponentReg.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

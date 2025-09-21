@@ -66,6 +66,7 @@ private:
 protected:
 	virtual void __fastcall Notification(System::Classes::TComponent* AComponent, System::Classes::TOperation AOperation);
 	virtual void __fastcall InternalClose();
+	virtual void __fastcall InternalPost();
 	virtual void __fastcall DoBeforeOpen();
 	virtual void __fastcall DoAfterOpen();
 	virtual void __fastcall DoBeforeClose();

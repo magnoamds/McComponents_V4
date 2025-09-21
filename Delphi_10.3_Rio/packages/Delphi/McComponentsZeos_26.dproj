@@ -118,17 +118,13 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\src\McComponents.dcr"/>
+        <DCCReference Include="..\..\src\McComponents.dcr"/>
         <DCCReference Include="McComponentsBase_26.dcp"/>
         <DCCReference Include="ZComponent.dcp"/>
         <DCCReference Include="ZDbc.dcp"/>
         <DCCReference Include="ZPlain.dcp"/>
         <DCCReference Include="ZCore.dcp"/>
         <DCCReference Include="ZParseSql.dcp"/>
-        <DCCReference Include="..\..\src\uMcEngineZeos.pas"/>
-        <DCCReference Include="..\..\src\uMcDriverZeos.pas"/>
-        <DCCReference Include="..\..\src\uMcZMemTable.pas"/>
-        <DCCReference Include="..\..\src\uMcZeosReg.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -161,7 +157,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\McComponentsZeos_26.bpl" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\McComponentsZeos_26.bpl" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>McComponentsZeos_26.bpl</RemoteName>
                         <Overwrite>true</Overwrite>
@@ -169,12 +165,6 @@
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx64\libcgsqlite3.dylib" Class="DependencyModule">
                     <Platform Name="OSX64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\McComponentsZeos_26.bpl" Configuration="Release" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>McComponentsZeos_26.bpl</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -190,6 +180,12 @@
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgsqlite3.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\McComponentsZeos_26.bpl" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>McComponentsZeos_26.bpl</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

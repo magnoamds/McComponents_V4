@@ -70,6 +70,8 @@ public:
 	static void __fastcall JSONArrayToDataSet(Umcjson::IMcJSONArray AJSONArray, Data::Db::TDataSet* ADataSet);
 	static Umcjson::IMcJSONObject __fastcall DataSetToJSONPersistence(Umctypes::TMcOperation AOperation, Data::Db::TDataSet* ADataSet, Umcprimarykey::TMcPrimaryKeys* APrimaryKey, bool AAllFields = false);
 	template<typename T> static T __fastcall IIF(const bool ATrueFalse, const T ATrueValue, const T AFalseValue);
+	static System::Rtti::TValue __fastcall ReadValueProperty(System::TObject* AObj, const System::UnicodeString AProperty);
+	static void __fastcall WriteValueProperty(System::TObject* AObj, const System::UnicodeString AProperty, const System::Rtti::TValue &ANewValue);
 public:
 	/* TObject.Create */ inline __fastcall TMcTools() : System::TObject() { }
 	/* TObject.Destroy */ inline __fastcall virtual ~TMcTools() { }

@@ -164,12 +164,8 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\src\McComponents.dcr"/>
+        <DCCReference Include="..\..\src\McComponents.dcr"/>
         <DCCReference Include="McComponentsBase_29.dcp"/>
-        <DCCReference Include="..\..\src\uMcDriverUniDAC.pas"/>
-        <DCCReference Include="..\..\src\uMcVirtualTable.pas"/>
-        <DCCReference Include="..\..\src\uMcEngineUniDAC.pas"/>
-        <DCCReference Include="..\..\src\uMcUniDACReg.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

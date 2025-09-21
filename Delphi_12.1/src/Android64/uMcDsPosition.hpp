@@ -19,6 +19,7 @@
 #include <System.SysUtils.hpp>
 #include <System.Classes.hpp>
 #include <System.Variants.hpp>
+#include <System.Rtti.hpp>
 #include <Data.DB.hpp>
 
 //-- user supplied -----------------------------------------------------------

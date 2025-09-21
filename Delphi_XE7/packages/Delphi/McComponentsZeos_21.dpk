@@ -1,7 +1,7 @@
 package McComponentsZeos_21;
 
 {$R *.res}
-{$R '..\src\McComponents.dcr'}
+{$R '..\..\src\McComponents.dcr'}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -36,11 +36,5 @@ requires
   ZPlain,
   ZCore,
   ZParseSql;
-
-contains
-  uMcEngineZeos in '..\..\src\uMcEngineZeos.pas',
-  uMcDriverZeos in '..\..\src\uMcDriverZeos.pas',
-  uMcZMemTable in '..\..\src\uMcZMemTable.pas',
-  uMcZeosReg in '..\..\src\uMcZeosReg.pas';
 
 end.
