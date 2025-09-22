@@ -42,6 +42,9 @@ requires
   FireDACCommonDriver,
   FireDACCommon;
 
+contains
+  uMcComponentReg in '..\..\src\uMcComponentReg.pas';
+
 end.
 
 

@@ -30,6 +30,14 @@ package McComponentsUniDAC_29;
 {$IMPLICITBUILD ON}
 
 requires
-  McComponentsBase_29;
+  McComponentsBase_29,
+  dac290,
+  unidac290;
+
+contains
+  uMcDriverUniDAC in '..\..\src\uMcDriverUniDAC.pas',
+  uMcVirtualTable in '..\..\src\uMcVirtualTable.pas',
+  uMcEngineUniDAC in '..\..\src\uMcEngineUniDAC.pas',
+  uMcUniDACReg in '..\..\src\uMcUniDACReg.pas';
 
 end.

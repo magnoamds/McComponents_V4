@@ -32,4 +32,10 @@ package McComponentsUniDAC_27;
 requires
   McComponentsBase_27;
 
+contains
+  uMcDriverUniDAC in '..\..\src\uMcDriverUniDAC.pas',
+  uMcVirtualTable in '..\..\src\uMcVirtualTable.pas',
+  uMcEngineUniDAC in '..\..\src\uMcEngineUniDAC.pas',
+  uMcUniDACReg in '..\..\src\uMcUniDACReg.pas';
+
 end.

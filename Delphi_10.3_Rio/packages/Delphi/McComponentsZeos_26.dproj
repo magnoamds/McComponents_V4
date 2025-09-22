@@ -125,6 +125,10 @@
         <DCCReference Include="ZPlain.dcp"/>
         <DCCReference Include="ZCore.dcp"/>
         <DCCReference Include="ZParseSql.dcp"/>
+        <DCCReference Include="..\..\src\uMcEngineZeos.pas"/>
+        <DCCReference Include="..\..\src\uMcDriverZeos.pas"/>
+        <DCCReference Include="..\..\src\uMcZMemTable.pas"/>
+        <DCCReference Include="..\..\src\uMcZeosReg.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

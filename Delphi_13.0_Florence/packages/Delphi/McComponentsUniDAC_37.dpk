@@ -30,7 +30,9 @@ package McComponentsUniDAC_37;
 {$IMPLICITBUILD ON}
 
 requires
-  McComponentsBase_37;
+  McComponentsBase_37,
+  dac290,
+  unidac290;
 
 contains
   uMcDriverUniDAC in '..\..\src\uMcDriverUniDAC.pas',

@@ -1,7 +1,7 @@
 package McComponentsUniDAC_21;
 
 {$R *.res}
-{$R '..\..\src\McComponents.dcr'}
+{$R '..\src\McComponents.dcr'}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -31,5 +31,11 @@ package McComponentsUniDAC_21;
 
 requires
   McComponentsBase_21;
+
+contains
+  uMcDriverUniDAC in '..\..\src\uMcDriverUniDAC.pas',
+  uMcVirtualTable in '..\..\src\uMcVirtualTable.pas',
+  uMcEngineUniDAC in '..\..\src\uMcEngineUniDAC.pas',
+  uMcUniDACReg in '..\..\src\uMcUniDACReg.pas';
 
 end.
