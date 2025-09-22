@@ -183,6 +183,36 @@
         <DCCReference Include="IndySystem.dcp"/>
         <DCCReference Include="IndyProtocols.dcp"/>
         <DCCReference Include="IndyCore.dcp"/>
+        <DCCReference Include="..\..\src\uMcCommons.pas"/>
+        <DCCReference Include="..\..\src\uMcConsts.pas"/>
+        <DCCReference Include="..\..\src\uMcResult.pas"/>
+        <DCCReference Include="..\..\src\uMcTools.pas"/>
+        <DCCReference Include="..\..\src\uMcEngineContract.pas"/>
+        <DCCReference Include="..\..\src\uMcEngineFireDAC.pas"/>
+        <DCCReference Include="..\..\src\uMcParamsDB.pas"/>
+        <DCCReference Include="..\..\src\uMcRestContract.pas"/>
+        <DCCReference Include="..\..\src\uMcRequestRestClient.pas"/>
+        <DCCReference Include="..\..\src\uMcResponseRestClient.pas"/>
+        <DCCReference Include="..\..\src\uMcPrimaryKey.pas"/>
+        <DCCReference Include="..\..\src\uMcJSON.pas"/>
+        <DCCReference Include="..\..\src\uMcJSONArray.pas"/>
+        <DCCReference Include="..\..\src\uMcJSONContract.pas"/>
+        <DCCReference Include="..\..\src\uMcJSONObject.pas"/>
+        <DCCReference Include="..\..\src\uMcJSONValue.pas"/>
+        <DCCReference Include="..\..\src\uMcTypes.pas"/>
+        <DCCReference Include="..\..\src\uMcBaseSQLStrings.pas"/>
+        <DCCReference Include="..\..\src\uMcDriverBase.pas"/>
+        <DCCReference Include="..\..\src\uMcServerContract.pas"/>
+        <DCCReference Include="..\..\src\uMcServerService.pas"/>
+        <DCCReference Include="..\..\src\uMcCache.pas"/>
+        <DCCReference Include="..\..\src\uMcConnection.pas"/>
+        <DCCReference Include="..\..\src\uMcDriverFireDAC.pas"/>
+        <DCCReference Include="..\..\src\uMcMemTable.pas"/>
+        <DCCReference Include="..\..\src\uMcServer.pas"/>
+        <DCCReference Include="..\..\src\uMcBaseDataSet.pas"/>
+        <DCCReference Include="..\..\src\uMcDsPosition.pas"/>
+        <DCCReference Include="..\..\src\uMcRequestNetHTTP.pas"/>
+        <DCCReference Include="..\..\src\uMcResponseNetHTTP.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -226,8 +256,8 @@
                 <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\HcPaletteRun.bpl" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\Linux64\bplHcPaletteRun.so" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\Win64\HcPaletteRun.bpl" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\McComponentsBase_30.bpl" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\McComponentsBase_30.bpl" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\McComponentsBase_37.bpl" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\23.0\Bpl\McComponentsBase_37.bpl" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\37.0\Bpl\McComponentsBase_37.bpl" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>McComponentsBase_37.bpl</RemoteName>
