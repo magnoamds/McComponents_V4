@@ -41,6 +41,8 @@ enum DECLSPEC_DENUM TTypeRest : unsigned char { RESTClient, NetHTTP };
 
 enum DECLSPEC_DENUM TContentKind : unsigned char { ckString, ckStream };
 
+typedef void __fastcall (__closure *TOnMensagemEvent)(System::TObject* Sender, const System::UnicodeString AMsg);
+
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TMcProxy : public System::Classes::TPersistent
 {
@@ -108,6 +110,8 @@ private:
 	bool FConnect;
 	TContentKind FContentKind;
 	unsigned FRetryRequest;
+	TOnMensagemEvent FOnServerOnline;
+	TOnMensagemEvent FOnServerOffline;
 	void __fastcall SetConnect(const bool Value);
 	void __fastcall SetRetryRequest(const unsigned Value);
 	void __fastcall ValidateParamsConnection();
@@ -125,6 +129,7 @@ public:
 	bool __fastcall FileUpload(System::Classes::TStream* const AFile, const System::UnicodeString AName, const System::UnicodeString ADirectory = System::UnicodeString())/* overload */;
 	System::Classes::TStream* __fastcall FileDownload(const System::UnicodeString AName, const System::UnicodeString ADirectory = System::UnicodeString());
 	Umcjson::IMcJSONArray __fastcall FileList(const System::UnicodeString ADirectory = System::UnicodeString());
+	bool __fastcall IsServerOnline();
 	
 __published:
 	__property System::UnicodeString About = {read=GetAbout};
@@ -141,6 +146,8 @@ __published:
 	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};
 	__property TContentKind ContentKind = {read=FContentKind, write=FContentKind, default=1};
 	__property System::Classes::TNotifyEvent OnBeforeConnect = {read=FOnBeforeConnect, write=FOnBeforeConnect};
+	__property TOnMensagemEvent OnServerOnline = {read=FOnServerOnline, write=FOnServerOnline};
+	__property TOnMensagemEvent OnServerOffline = {read=FOnServerOffline, write=FOnServerOffline};
 };
 
 #pragma pack(pop)
