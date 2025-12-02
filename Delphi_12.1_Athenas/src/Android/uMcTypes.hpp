@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcTypes.pas' rev: 36.00 (Android)
 
-#ifndef uMcTypesHPP
-#define uMcTypesHPP
+#ifndef UmctypesHPP
+#define UmctypesHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -39,4 +39,4 @@ using namespace Umctypes;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcTypesHPP
+#endif	// UmctypesHPP

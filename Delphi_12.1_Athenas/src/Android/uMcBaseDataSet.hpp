@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcBaseDataSet.pas' rev: 36.00 (Android)
 
-#ifndef uMcBaseDataSetHPP
-#define uMcBaseDataSetHPP
+#ifndef UmcbasedatasetHPP
+#define UmcbasedatasetHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -130,4 +130,4 @@ using namespace Umcbasedataset;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcBaseDataSetHPP
+#endif	// UmcbasedatasetHPP

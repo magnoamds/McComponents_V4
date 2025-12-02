@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcJSONArray.pas' rev: 36.00 (Android)
 
-#ifndef uMcJSONArrayHPP
-#define uMcJSONArrayHPP
+#ifndef UmcjsonarrayHPP
+#define UmcjsonarrayHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -99,4 +99,4 @@ using namespace Umcjsonarray;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcJSONArrayHPP
+#endif	// UmcjsonarrayHPP

@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcResponseNetHTTP.pas' rev: 36.00 (Android)
 
-#ifndef uMcResponseNetHTTPHPP
-#define uMcResponseNetHTTPHPP
+#ifndef UmcresponsenethttpHPP
+#define UmcresponsenethttpHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -85,4 +85,4 @@ using namespace Umcresponsenethttp;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcResponseNetHTTPHPP
+#endif	// UmcresponsenethttpHPP

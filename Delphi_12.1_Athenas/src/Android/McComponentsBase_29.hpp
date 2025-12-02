@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'McComponentsBase_29.dpk' rev: 36.00 (Android)
 
-#ifndef McComponentsBase_29HPP
-#define McComponentsBase_29HPP
+#ifndef Mccomponentsbase_29HPP
+#define Mccomponentsbase_29HPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -47,7 +47,7 @@
 #include <uMcRequestNetHTTP.hpp>
 #include <uMcResponseNetHTTP.hpp>
 // SO_PFX: bpl
-// PRG_EXT: .so
+// PRG_EXT: .a
 // OBJ_DIR: C:\Users\Public\Documents\Embarcadero\Studio\23.0\Dcp\Android
 // OBJ_EXT: .o
 
@@ -67,4 +67,4 @@ using namespace Mccomponentsbase_29;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// McComponentsBase_29HPP
+#endif	// Mccomponentsbase_29HPP

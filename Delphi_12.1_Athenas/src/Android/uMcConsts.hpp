@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcConsts.pas' rev: 36.00 (Android)
 
-#ifndef uMcConstsHPP
-#define uMcConstsHPP
+#ifndef UmcconstsHPP
+#define UmcconstsHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -149,4 +149,4 @@ using namespace Umcconsts;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcConstsHPP
+#endif	// UmcconstsHPP

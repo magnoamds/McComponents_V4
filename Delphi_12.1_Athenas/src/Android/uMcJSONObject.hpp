@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcJSONObject.pas' rev: 36.00 (Android)
 
-#ifndef uMcJSONObjectHPP
-#define uMcJSONObjectHPP
+#ifndef UmcjsonobjectHPP
+#define UmcjsonobjectHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -99,4 +99,4 @@ using namespace Umcjsonobject;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcJSONObjectHPP
+#endif	// UmcjsonobjectHPP

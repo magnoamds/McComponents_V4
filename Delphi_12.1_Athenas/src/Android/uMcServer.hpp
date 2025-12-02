@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcServer.pas' rev: 36.00 (Android)
 
-#ifndef uMcServerHPP
-#define uMcServerHPP
+#ifndef UmcserverHPP
+#define UmcserverHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -29,6 +29,8 @@ namespace Umcserver
 //-- forward type declarations -----------------------------------------------
 class DELPHICLASS TMcServer;
 //-- type declarations -------------------------------------------------------
+typedef void __fastcall (__closure *TMcRequest)(System::UnicodeString AContent);
+
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TMcServer : public System::Classes::TComponent
 {
@@ -40,6 +42,7 @@ private:
 	Umcparamsdb::TMcParamsDB* FMParamsDB;
 	System::UnicodeString FSecurityKey;
 	System::Classes::TNotifyEvent FBeforeExecute;
+	TMcRequest FMcRequest;
 	Umccommons::TMcEvent FOnError;
 	System::UnicodeString __fastcall GetAbout();
 	System::UnicodeString __fastcall OnResource(const System::UnicodeString AValue, System::Classes::TStream* const ABody);
@@ -61,6 +64,7 @@ __published:
 	__property Umcdriverbase::TMcDriverBase* Driver = {read=FDriver, write=FDriver};
 	__property System::UnicodeString SecurityKey = {read=FSecurityKey, write=FSecurityKey};
 	__property System::Classes::TNotifyEvent BeforeExecute = {read=FBeforeExecute, write=FBeforeExecute};
+	__property TMcRequest OnMcRequest = {read=FMcRequest, write=FMcRequest};
 	__property Umccommons::TMcEvent OnError = {read=FOnError, write=FOnError};
 };
 
@@ -76,4 +80,4 @@ using namespace Umcserver;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcServerHPP
+#endif	// UmcserverHPP

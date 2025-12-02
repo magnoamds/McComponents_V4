@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcConnection.pas' rev: 36.00 (Android)
 
-#ifndef uMcConnectionHPP
-#define uMcConnectionHPP
+#ifndef UmcconnectionHPP
+#define UmcconnectionHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -162,4 +162,4 @@ using namespace Umcconnection;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcConnectionHPP
+#endif	// UmcconnectionHPP

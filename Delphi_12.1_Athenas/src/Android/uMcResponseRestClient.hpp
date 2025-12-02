@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcResponseRestClient.pas' rev: 36.00 (Android)
 
-#ifndef uMcResponseRestClientHPP
-#define uMcResponseRestClientHPP
+#ifndef UmcresponserestclientHPP
+#define UmcresponserestclientHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -79,4 +79,4 @@ using namespace Umcresponserestclient;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcResponseRestClientHPP
+#endif	// UmcresponserestclientHPP

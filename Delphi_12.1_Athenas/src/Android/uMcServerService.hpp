@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcServerService.pas' rev: 36.00 (Android)
 
-#ifndef uMcServerServiceHPP
-#define uMcServerServiceHPP
+#ifndef UmcserverserviceHPP
+#define UmcserverserviceHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -87,4 +87,4 @@ using namespace Umcserverservice;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcServerServiceHPP
+#endif	// UmcserverserviceHPP

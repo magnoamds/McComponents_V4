@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcDriverBase.pas' rev: 36.00 (Android)
 
-#ifndef uMcDriverBaseHPP
-#define uMcDriverBaseHPP
+#ifndef UmcdriverbaseHPP
+#define UmcdriverbaseHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -58,4 +58,4 @@ using namespace Umcdriverbase;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcDriverBaseHPP
+#endif	// UmcdriverbaseHPP

@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcCache.pas' rev: 36.00 (Android)
 
-#ifndef uMcCacheHPP
-#define uMcCacheHPP
+#ifndef UmccacheHPP
+#define UmccacheHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -99,4 +99,4 @@ using namespace Umccache;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// uMcCacheHPP
+#endif	// UmccacheHPP
