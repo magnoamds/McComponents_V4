@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcCommons.pas' rev: 36.00 (Android)
 
-#ifndef UmccommonsHPP
-#define UmccommonsHPP
+#ifndef uMcCommonsHPP
+#define uMcCommonsHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -61,4 +61,4 @@ using namespace Umccommons;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmccommonsHPP
+#endif	// uMcCommonsHPP

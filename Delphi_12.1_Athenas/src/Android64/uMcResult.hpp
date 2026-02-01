@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcResult.pas' rev: 36.00 (Android)
 
-#ifndef UmcresultHPP
-#define UmcresultHPP
+#ifndef uMcResultHPP
+#define uMcResultHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -89,4 +89,4 @@ using namespace Umcresult;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcresultHPP
+#endif	// uMcResultHPP

@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcMemTable.pas' rev: 36.00 (Android)
 
-#ifndef UmcmemtableHPP
-#define UmcmemtableHPP
+#ifndef uMcMemTableHPP
+#define uMcMemTableHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -118,4 +118,4 @@ using namespace Umcmemtable;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcmemtableHPP
+#endif	// uMcMemTableHPP

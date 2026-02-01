@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcEngineContract.pas' rev: 36.00 (Android)
 
-#ifndef UmcenginecontractHPP
-#define UmcenginecontractHPP
+#ifndef uMcEngineContractHPP
+#define uMcEngineContractHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -56,4 +56,4 @@ using namespace Umcenginecontract;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcenginecontractHPP
+#endif	// uMcEngineContractHPP

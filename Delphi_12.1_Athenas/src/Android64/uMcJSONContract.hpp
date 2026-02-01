@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcJSONContract.pas' rev: 36.00 (Android)
 
-#ifndef UmcjsoncontractHPP
-#define UmcjsoncontractHPP
+#ifndef uMcJSONContractHPP
+#define uMcJSONContractHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -120,4 +120,4 @@ using namespace Umcjsoncontract;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcjsoncontractHPP
+#endif	// uMcJSONContractHPP

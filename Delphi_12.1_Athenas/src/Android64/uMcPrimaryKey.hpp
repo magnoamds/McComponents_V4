@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcPrimaryKey.pas' rev: 36.00 (Android)
 
-#ifndef UmcprimarykeyHPP
-#define UmcprimarykeyHPP
+#ifndef uMcPrimaryKeyHPP
+#define uMcPrimaryKeyHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -90,4 +90,4 @@ using namespace Umcprimarykey;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcprimarykeyHPP
+#endif	// uMcPrimaryKeyHPP

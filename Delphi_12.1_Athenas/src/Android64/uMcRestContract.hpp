@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcRestContract.pas' rev: 36.00 (Android)
 
-#ifndef UmcrestcontractHPP
-#define UmcrestcontractHPP
+#ifndef uMcRestContractHPP
+#define uMcRestContractHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -98,4 +98,4 @@ using namespace Umcrestcontract;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcrestcontractHPP
+#endif	// uMcRestContractHPP

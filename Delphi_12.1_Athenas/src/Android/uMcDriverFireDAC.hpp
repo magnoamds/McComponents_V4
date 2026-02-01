@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcDriverFireDAC.pas' rev: 36.00 (Android)
 
-#ifndef UmcdriverfiredacHPP
-#define UmcdriverfiredacHPP
+#ifndef uMcDriverFireDACHPP
+#define uMcDriverFireDACHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -44,6 +44,7 @@ protected:
 public:
 	__fastcall virtual TMcDriverFireDAC(System::Classes::TComponent* AOwner);
 	__fastcall virtual ~TMcDriverFireDAC();
+	virtual System::Classes::TComponent* __fastcall GetConnection();
 	virtual Umcenginecontract::_di_IMcEngine __fastcall GetEngine();
 	
 __published:
@@ -63,4 +64,4 @@ using namespace Umcdriverfiredac;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcdriverfiredacHPP
+#endif	// uMcDriverFireDACHPP

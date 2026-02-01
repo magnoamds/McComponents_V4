@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'McComponentsBase_29.dpk' rev: 36.00 (Android)
 
-#ifndef Mccomponentsbase_29HPP
-#define Mccomponentsbase_29HPP
+#ifndef McComponentsBase_29HPP
+#define McComponentsBase_29HPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -67,4 +67,4 @@ using namespace Mccomponentsbase_29;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// Mccomponentsbase_29HPP
+#endif	// McComponentsBase_29HPP

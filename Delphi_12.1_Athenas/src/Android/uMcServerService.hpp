@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcServerService.pas' rev: 36.00 (Android)
 
-#ifndef UmcserverserviceHPP
-#define UmcserverserviceHPP
+#ifndef uMcServerServiceHPP
+#define uMcServerServiceHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -51,6 +51,7 @@ private:
 	System::UnicodeString __fastcall Persistence(Umcjson::IMcJSONArray AJSONItems, System::Classes::TStream* ABinData);
 	System::UnicodeString __fastcall ExecSQL(Umcjson::IMcJSONArray AJSONItems);
 	System::UnicodeString __fastcall ConnectionExecSQL(Umcjson::IMcJSONObject AJSONObject);
+	System::UnicodeString __fastcall CheckDBConnection();
 	
 public:
 	__fastcall TMcServerService(Umcenginecontract::_di_IMcEngine AMcEngine);
@@ -87,4 +88,4 @@ using namespace Umcserverservice;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcserverserviceHPP
+#endif	// uMcServerServiceHPP

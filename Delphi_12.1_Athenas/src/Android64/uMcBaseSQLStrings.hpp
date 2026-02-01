@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcBaseSQLStrings.pas' rev: 36.00 (Android)
 
-#ifndef UmcbasesqlstringsHPP
-#define UmcbasesqlstringsHPP
+#ifndef uMcBaseSQLStringsHPP
+#define uMcBaseSQLStringsHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -62,4 +62,4 @@ using namespace Umcbasesqlstrings;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcbasesqlstringsHPP
+#endif	// uMcBaseSQLStringsHPP

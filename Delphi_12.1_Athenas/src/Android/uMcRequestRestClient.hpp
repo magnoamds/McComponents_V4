@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcRequestRestClient.pas' rev: 36.00 (Android)
 
-#ifndef UmcrequestrestclientHPP
-#define UmcrequestrestclientHPP
+#ifndef uMcRequestRestClientHPP
+#define uMcRequestRestClientHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -129,4 +129,4 @@ using namespace Umcrequestrestclient;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcrequestrestclientHPP
+#endif	// uMcRequestRestClientHPP

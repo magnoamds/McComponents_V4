@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcTools.pas' rev: 36.00 (Android)
 
-#ifndef UmctoolsHPP
-#define UmctoolsHPP
+#ifndef uMcToolsHPP
+#define uMcToolsHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -89,4 +89,4 @@ using namespace Umctools;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmctoolsHPP
+#endif	// uMcToolsHPP

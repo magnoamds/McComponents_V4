@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcServer.pas' rev: 36.00 (Android)
 
-#ifndef UmcserverHPP
-#define UmcserverHPP
+#ifndef uMcServerHPP
+#define uMcServerHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -52,9 +52,11 @@ protected:
 public:
 	__fastcall virtual TMcServer(System::Classes::TComponent* AOwner);
 	__fastcall virtual ~TMcServer();
-	System::UnicodeString __fastcall Resource(const System::UnicodeString AValue);
+	System::UnicodeString __fastcall Resource(const System::UnicodeString AValue)/* overload */;
+	System::Classes::TStream* __fastcall Resource(System::Classes::TStream* const AValue)/* overload */;
 	System::Classes::TStream* __fastcall ProcessRequest(const System::UnicodeString AValue)/* overload */;
 	System::Classes::TStream* __fastcall ProcessRequest(const System::Sysutils::TBytes AValue)/* overload */;
+	System::Classes::TStream* __fastcall ProcessRequest(System::Classes::TStream* const AValue)/* overload */;
 	__property System::UnicodeString MyContent = {read=FMyContent};
 	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB};
 	
@@ -78,4 +80,4 @@ using namespace Umcserver;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcserverHPP
+#endif	// uMcServerHPP

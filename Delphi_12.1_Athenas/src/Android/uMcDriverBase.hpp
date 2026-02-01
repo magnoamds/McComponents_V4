@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcDriverBase.pas' rev: 36.00 (Android)
 
-#ifndef UmcdriverbaseHPP
-#define UmcdriverbaseHPP
+#ifndef uMcDriverBaseHPP
+#define uMcDriverBaseHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -36,6 +36,7 @@ private:
 	System::UnicodeString __fastcall GetAbout();
 	
 public:
+	virtual System::Classes::TComponent* __fastcall GetConnection() = 0 ;
 	virtual Umcenginecontract::_di_IMcEngine __fastcall GetEngine() = 0 ;
 	
 __published:
@@ -58,4 +59,4 @@ using namespace Umcdriverbase;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcdriverbaseHPP
+#endif	// uMcDriverBaseHPP

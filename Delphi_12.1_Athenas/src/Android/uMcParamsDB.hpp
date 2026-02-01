@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcParamsDB.pas' rev: 36.00 (Android)
 
-#ifndef UmcparamsdbHPP
-#define UmcparamsdbHPP
+#ifndef uMcParamsDBHPP
+#define uMcParamsDBHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -78,4 +78,4 @@ using namespace Umcparamsdb;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcparamsdbHPP
+#endif	// uMcParamsDBHPP

@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcDsPosition.pas' rev: 36.00 (Android)
 
-#ifndef UmcdspositionHPP
-#define UmcdspositionHPP
+#ifndef uMcDsPositionHPP
+#define uMcDsPositionHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -58,4 +58,4 @@ using namespace Umcdsposition;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcdspositionHPP
+#endif	// uMcDsPositionHPP

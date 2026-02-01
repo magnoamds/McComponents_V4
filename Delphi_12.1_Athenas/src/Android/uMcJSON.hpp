@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcJSON.pas' rev: 36.00 (Android)
 
-#ifndef UmcjsonHPP
-#define UmcjsonHPP
+#ifndef uMcJSONHPP
+#define uMcJSONHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -62,4 +62,4 @@ using namespace Umcjson;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcjsonHPP
+#endif	// uMcJSONHPP

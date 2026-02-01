@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcEngineFireDAC.pas' rev: 36.00 (Android)
 
-#ifndef UmcenginefiredacHPP
-#define UmcenginefiredacHPP
+#ifndef uMcEngineFireDACHPP
+#define uMcEngineFireDACHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -95,4 +95,4 @@ using namespace Umcenginefiredac;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcenginefiredacHPP
+#endif	// uMcEngineFireDACHPP

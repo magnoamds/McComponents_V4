@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcTypes.pas' rev: 36.00 (Android)
 
-#ifndef UmctypesHPP
-#define UmctypesHPP
+#ifndef uMcTypesHPP
+#define uMcTypesHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -23,7 +23,7 @@ namespace Umctypes
 {
 //-- forward type declarations -----------------------------------------------
 //-- type declarations -------------------------------------------------------
-enum class DECLSPEC_DENUM TMcAction : unsigned char { mcConnExecSQL, mcOpen, mcPersistence, mcExecSQL, mcFile };
+enum class DECLSPEC_DENUM TMcAction : unsigned char { mcConnExecSQL, mcOpen, mcPersistence, mcExecSQL, mcFile, mcDBConn };
 
 enum class DECLSPEC_DENUM TMcOperation : unsigned char { mcNone, mcInsert, mcUpdate, mcDelete };
 
@@ -39,4 +39,4 @@ using namespace Umctypes;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmctypesHPP
+#endif	// uMcTypesHPP

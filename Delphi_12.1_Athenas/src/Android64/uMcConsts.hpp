@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcConsts.pas' rev: 36.00 (Android)
 
-#ifndef UmcconstsHPP
-#define UmcconstsHPP
+#ifndef uMcConstsHPP
+#define uMcConstsHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -25,7 +25,7 @@ namespace Umcconsts
 //-- type declarations -------------------------------------------------------
 //-- var, const, procedure ---------------------------------------------------
 #define _KEY_VERSION u"version"
-#define _MC_VERSION u"4.1.0 Evaluation"
+#define _MC_VERSION u"4.2.0 Evaluation"
 static _DELPHI_CONST System::WideChar _MC_COMPATIBILITY = (System::WideChar)(0x34);
 #define _CONTENT_TYPE_JSON u"application/json"
 #define _CONTENT_TYPE_STREAM u"application/octet-stream"
@@ -116,6 +116,8 @@ extern DELPHI_PACKAGE System::ResourceString _sConnectionNotEstablished;
 #define Umcconsts_sConnectionNotEstablished System::LoadResourceString(&Umcconsts::_sConnectionNotEstablished)
 extern DELPHI_PACKAGE System::ResourceString _sMcDriverNotDefinedInMcServer;
 #define Umcconsts_sMcDriverNotDefinedInMcServer System::LoadResourceString(&Umcconsts::_sMcDriverNotDefinedInMcServer)
+extern DELPHI_PACKAGE System::ResourceString _sMcConnectionNotDefinedInMcDriver;
+#define Umcconsts_sMcConnectionNotDefinedInMcDriver System::LoadResourceString(&Umcconsts::_sMcConnectionNotDefinedInMcDriver)
 extern DELPHI_PACKAGE System::ResourceString _sResourceInvalid;
 #define Umcconsts_sResourceInvalid System::LoadResourceString(&Umcconsts::_sResourceInvalid)
 extern DELPHI_PACKAGE System::ResourceString _sResourceEmpty;
@@ -128,6 +130,10 @@ extern DELPHI_PACKAGE System::ResourceString _sParamsNotFound;
 #define Umcconsts_sParamsNotFound System::LoadResourceString(&Umcconsts::_sParamsNotFound)
 extern DELPHI_PACKAGE System::ResourceString _sCommandExecutedSuccessfully;
 #define Umcconsts_sCommandExecutedSuccessfully System::LoadResourceString(&Umcconsts::_sCommandExecutedSuccessfully)
+extern DELPHI_PACKAGE System::ResourceString _sConnectedSuccessfully;
+#define Umcconsts_sConnectedSuccessfully System::LoadResourceString(&Umcconsts::_sConnectedSuccessfully)
+extern DELPHI_PACKAGE System::ResourceString _sDBConnectedSuccessfully;
+#define Umcconsts_sDBConnectedSuccessfully System::LoadResourceString(&Umcconsts::_sDBConnectedSuccessfully)
 extern DELPHI_PACKAGE System::ResourceString _sFileOptionNotFound;
 #define Umcconsts_sFileOptionNotFound System::LoadResourceString(&Umcconsts::_sFileOptionNotFound)
 extern DELPHI_PACKAGE System::ResourceString _sSuccessfullyPersistency;
@@ -149,4 +155,4 @@ using namespace Umcconsts;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcconstsHPP
+#endif	// uMcConstsHPP

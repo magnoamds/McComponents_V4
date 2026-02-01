@@ -4,8 +4,8 @@
 
 // (DO NOT EDIT: machine generated header) 'uMcConnection.pas' rev: 36.00 (Android)
 
-#ifndef UmcconnectionHPP
-#define UmcconnectionHPP
+#ifndef uMcConnectionHPP
+#define uMcConnectionHPP
 
 #pragma delphiheader begin
 #pragma option push
@@ -41,7 +41,7 @@ enum DECLSPEC_DENUM TTypeRest : unsigned char { RESTClient, NetHTTP };
 
 enum DECLSPEC_DENUM TContentKind : unsigned char { ckString, ckStream };
 
-typedef void __fastcall (__closure *TOnMensagemEvent)(System::TObject* Sender, const System::UnicodeString AMsg);
+typedef void __fastcall (__closure *TOnMensagemEvent)(System::TObject* Sender, const System::UnicodeString AValue);
 
 class PASCALIMPLEMENTATION TMcProxy : public System::Classes::TPersistent
 {
@@ -102,17 +102,18 @@ private:
 	Umcparamsdb::TMcParamsDB* FMParamsDB;
 	TTypeRest FTypeRest;
 	System::Classes::TNotifyEvent FOnBeforeConnect;
-	bool FConnect;
+	bool FCheckServer;
+	bool FCheckDatabase;
 	TContentKind FContentKind;
 	unsigned FRetryRequest;
-	TOnMensagemEvent FOnServerOnline;
-	TOnMensagemEvent FOnServerOffline;
-	void __fastcall SetConnect(const bool Value);
+	void __fastcall SetCheckServer(const bool Value);
+	void __fastcall SetCheckDatabase(const bool Value);
 	void __fastcall SetRetryRequest(const unsigned Value);
 	void __fastcall ValidateParamsConnection();
 	System::UnicodeString __fastcall GetAbout();
 	System::UnicodeString __fastcall GetBaseURL();
 	System::UnicodeString __fastcall GetResource();
+	Umcrestcontract::_di_IMcRequest __fastcall FactoryMcRequest();
 	
 public:
 	__fastcall virtual TMcConnection(System::Classes::TComponent* AOwner);
@@ -124,11 +125,11 @@ public:
 	bool __fastcall FileUpload(System::Classes::TStream* const AFile, const System::UnicodeString AName, const System::UnicodeString ADirectory = System::UnicodeString())/* overload */;
 	System::Classes::TStream* __fastcall FileDownload(const System::UnicodeString AName, const System::UnicodeString ADirectory = System::UnicodeString());
 	Umcjson::IMcJSONArray __fastcall FileList(const System::UnicodeString ADirectory = System::UnicodeString());
-	bool __fastcall IsServerOnline();
 	
 __published:
 	__property System::UnicodeString About = {read=GetAbout};
-	__property bool Connect = {read=FConnect, write=SetConnect, default=0};
+	__property bool CheckServer = {read=FCheckServer, write=SetCheckServer, default=0};
+	__property bool CheckDatabase = {read=FCheckDatabase, write=SetCheckDatabase, default=0};
 	__property System::UnicodeString BaseURL = {read=GetBaseURL, write=FBaseURL};
 	__property System::UnicodeString Resource = {read=GetResource, write=FResource};
 	__property TMcBasicAuthentication* BasicAuthentication = {read=FBasicAuthentication, write=FBasicAuthentication};
@@ -141,8 +142,6 @@ __published:
 	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};
 	__property TContentKind ContentKind = {read=FContentKind, write=FContentKind, default=1};
 	__property System::Classes::TNotifyEvent OnBeforeConnect = {read=FOnBeforeConnect, write=FOnBeforeConnect};
-	__property TOnMensagemEvent OnServerOnline = {read=FOnServerOnline, write=FOnServerOnline};
-	__property TOnMensagemEvent OnServerOffline = {read=FOnServerOffline, write=FOnServerOffline};
 };
 
 
@@ -156,4 +155,4 @@ using namespace Umcconnection;
 
 #pragma delphiheader end.
 //-- end unit ----------------------------------------------------------------
-#endif	// UmcconnectionHPP
+#endif	// uMcConnectionHPP
