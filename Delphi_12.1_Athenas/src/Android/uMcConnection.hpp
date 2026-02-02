@@ -104,7 +104,7 @@ private:
 	System::UnicodeString FMyContent;
 	System::UnicodeString FSecurityKey;
 	int FTimeOut;
-	Umcparamsdb::TMcParamsDB* FMParamsDB;
+	Umcparamsdb::TMcParamsDB* FMcParamsDB;
 	TTypeRest FTypeRest;
 	System::Classes::TNotifyEvent FOnBeforeConnect;
 	bool FCheckServer;
@@ -143,7 +143,7 @@ __published:
 	__property System::UnicodeString SecurityKey = {read=FSecurityKey, write=FSecurityKey};
 	__property int TimeOut = {read=FTimeOut, write=FTimeOut, default=30000};
 	__property unsigned RetryRequest = {read=FRetryRequest, write=SetRetryRequest, default=1};
-	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB, write=FMParamsDB};
+	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMcParamsDB, write=FMcParamsDB};
 	__property TTypeRest TypeRest = {read=FTypeRest, write=FTypeRest, nodefault};
 	__property TContentKind ContentKind = {read=FContentKind, write=FContentKind, default=1};
 	__property System::Classes::TNotifyEvent OnBeforeConnect = {read=FOnBeforeConnect, write=FOnBeforeConnect};

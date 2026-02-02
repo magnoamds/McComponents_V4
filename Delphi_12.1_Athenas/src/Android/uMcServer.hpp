@@ -39,7 +39,7 @@ class PASCALIMPLEMENTATION TMcServer : public System::Classes::TComponent
 private:
 	Umcdriverbase::TMcDriverBase* FDriver;
 	System::UnicodeString FMyContent;
-	Umcparamsdb::TMcParamsDB* FMParamsDB;
+	Umcparamsdb::TMcParamsDB* FMcParamsDB;
 	System::UnicodeString FSecurityKey;
 	System::Classes::TNotifyEvent FBeforeExecute;
 	TMcRequest FMcRequest;
@@ -59,7 +59,7 @@ public:
 	System::Classes::TStream* __fastcall ProcessRequest(const System::Sysutils::TBytes AValue)/* overload */;
 	System::Classes::TStream* __fastcall ProcessRequest(System::Classes::TStream* const AValue)/* overload */;
 	__property System::UnicodeString MyContent = {read=FMyContent};
-	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMParamsDB};
+	__property Umcparamsdb::TMcParamsDB* ParamsDB = {read=FMcParamsDB};
 	
 __published:
 	__property System::UnicodeString About = {read=GetAbout};

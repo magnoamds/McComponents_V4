@@ -49,6 +49,7 @@ private:
 public:
 	__fastcall TMcParamsDB();
 	__fastcall virtual ~TMcParamsDB();
+	void __fastcall Clear();
 	void __fastcall FromJSON(const Umcjson::IMcJSONObject AJSONObject);
 	Umcjson::IMcJSONObject __fastcall ToJSON();
 	
