@@ -25,7 +25,7 @@ namespace Umcconsts
 //-- type declarations -------------------------------------------------------
 //-- var, const, procedure ---------------------------------------------------
 #define _KEY_VERSION u"version"
-#define _MC_VERSION u"4.2.0 Evaluation"
+#define _MC_VERSION u"4.2.0"
 static _DELPHI_CONST System::WideChar _MC_COMPATIBILITY = (System::WideChar)(0x34);
 #define _CONTENT_TYPE_JSON u"application/json"
 #define _CONTENT_TYPE_STREAM u"application/octet-stream"
