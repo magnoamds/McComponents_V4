@@ -126,7 +126,7 @@ public:
 	System::Classes::TStream* __fastcall FileDownload(const System::UnicodeString AName, const System::UnicodeString ADirectory = System::UnicodeString());
 	Umcjson::IMcJSONArray __fastcall FileList(const System::UnicodeString ADirectory = System::UnicodeString());
 	bool __fastcall IsServerOnLine();
-	bool __fastcall IsDatabaseConnected();
+	bool __fastcall IsDatabaseConnect();
 	
 __published:
 	__property System::UnicodeString About = {read=GetAbout};
